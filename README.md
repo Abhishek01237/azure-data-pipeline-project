@@ -32,7 +32,7 @@ The project uses various datasets from Adventure Works, including:
 
 ---
 
-## 📌 Architecture Overview
+## 📌 Architecture Overview and Pipeline Flow
 
 ```plaintext
 📁 ADLS (Bronze)         <-  Raw data ingested via ADF
@@ -42,9 +42,9 @@ The project uses various datasets from Adventure Works, including:
 
 
 
-### 🔄 Pipeline Flow
 
 1. Data Ingestion – ADF
+
 Built a dynamic pipeline using Lookup and ForEach activities with parameterization to load all datasets sequentially.
 Loaded raw CSV data into ADLS Bronze container
 
